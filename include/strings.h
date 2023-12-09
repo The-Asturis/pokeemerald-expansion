@@ -3026,4 +3026,7 @@ extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
 extern const u8 gText_TellHimTheWords[];
 
+// Evolution party screen option
+extern const u8 gText_Evolution[];
+
 #endif // GUARD_STRINGS_H
