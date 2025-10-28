@@ -717,8 +717,16 @@ static void DoMoveRelearnerMain(void)
                 gOriginSummaryScreenPage = 0;
             }
             else
-            {
-                SetMainCallback2(CB2_ReturnToField);
+            {     
+			if (FlagGet(FLAG_TEMP_5))
+			{
+				CB2_ReturnToPartyMenuFromSummaryScreen();
+				FlagClear(FLAG_TEMP_5);
+			}
+			else
+			{
+				SetMainCallback2(CB2_ReturnToField);
+			}
             }
 
             FreeMoveRelearnerResources();
