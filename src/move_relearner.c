@@ -717,8 +717,16 @@ static void DoMoveRelearnerMain(void)
                 gOriginSummaryScreenPage = 0;
             }
             else
-            {
-                SetMainCallback2(CB2_ReturnToField);
+            {     
+			if (FlagGet(FLAG_TEMP_5))
+			{
+				CB2_ReturnToPartyMenuFromSummaryScreen();
+				FlagClear(FLAG_TEMP_5);
+			}
+			else
+			{
+				SetMainCallback2(CB2_ReturnToField);
+			}
             }
 
             FreeMoveRelearnerResources();
@@ -748,14 +756,14 @@ static void DoMoveRelearnerMain(void)
             else
             {
                 u16 move = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_MOVE1 + sMoveRelearnerStruct->moveSlot);
-                u8 originalPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
+                u8 oldPP;
 
                 StringCopy(gStringVar3, GetMoveName(move));
                 RemoveMonPPBonus(&gPlayerParty[sMoveRelearnerStruct->partyMon], sMoveRelearnerStruct->moveSlot);
+                oldPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + GetMoveSlotToReplace(), NULL);
                 SetMonMoveSlot(&gPlayerParty[sMoveRelearnerStruct->partyMon], GetCurrentSelectedMove(), sMoveRelearnerStruct->moveSlot);
-                u8 newPP = GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot);
-                if (!P_SUMMARY_MOVE_RELEARNER_FULL_PP && gOriginSummaryScreenPage != 0 && originalPP < newPP)
-                    SetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + sMoveRelearnerStruct->moveSlot, &originalPP);
+                 if (GetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + GetMoveSlotToReplace(), NULL) > oldPP)
+                    SetMonData(&gPlayerParty[sMoveRelearnerStruct->partyMon], MON_DATA_PP1 + GetMoveSlotToReplace(), &oldPP);
                 StringCopy(gStringVar2, GetMoveName(GetCurrentSelectedMove()));
                 PrintMessageWithPlaceholders(gText_MoveRelearnerAndPoof);
                 sMoveRelearnerStruct->state = MENU_STATE_DOUBLE_FANFARE_FORGOT_MOVE;
