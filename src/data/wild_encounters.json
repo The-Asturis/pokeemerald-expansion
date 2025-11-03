@@ -90,12 +90,12 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_RUFFLET"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_ZORUA_HISUI"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 3,
@@ -105,12 +105,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_RUFFLET"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_RUFFLET"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 3,
@@ -120,7 +120,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_RUFFLET"
+                "species": "SPECIES_PIDOVE"
               },
               {
                 "min_level": 2,
