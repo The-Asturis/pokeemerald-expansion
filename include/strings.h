@@ -2426,4 +2426,7 @@ extern const u8 gText_Rename[]; // change nickname from summary screen
 // Switch Caught Mon into Party
 extern const u8 gText_CannotSendMonToBoxHM[];
 
+//Move Relearning Menu
+extern const u8 gText_Moves_Menu[];
+
 #endif // GUARD_STRINGS_H
