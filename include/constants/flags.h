@@ -13,12 +13,12 @@
 #define FLAG_TEMP_2      (TEMP_FLAGS_START + 0x2)
 #define FLAG_TEMP_3      (TEMP_FLAGS_START + 0x3)
 #define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
-#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Unused Flag
-#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Unused Flag
+#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Used for move relearner menu
+#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Searching for mon --DexNav
 #define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
-#define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
-#define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Unused Flag
-#define FLAG_TEMP_A      (TEMP_FLAGS_START + 0xA)  // Unused Flag
+#define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Allow player to find hidden mons
+#define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Registered DexNav species
+#define FLAG_TEMP_A      (TEMP_FLAGS_START + 0xA)  // Steps for finding hidden pokemon --DexNav
 #define FLAG_TEMP_B      (TEMP_FLAGS_START + 0xB)  // Unused Flag
 #define FLAG_TEMP_C      (TEMP_FLAGS_START + 0xC)  // Unused Flag
 #define FLAG_TEMP_D      (TEMP_FLAGS_START + 0xD)  // Unused Flag
@@ -43,7 +43,7 @@
 #define TEMP_FLAGS_END   FLAG_TEMP_1F
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
+#define FLAG_UNUSED_0x020    0x20 // DexNav shows in start menu
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
