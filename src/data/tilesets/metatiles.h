@@ -210,6 +210,7 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
 
+<<<<<<< Updated upstream
 #else
 
 const u16 gMetatiles_Building_Frlg[] = INCBIN_U16("data/tilesets/primary/building_frlg/metatiles.bin");
@@ -408,3 +409,19 @@ const u16 gMetatiles_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_
 const u16 gMetatileAttributes_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame_frlg/metatile_attributes.bin");
 
 #endif // IS_FRLG
+=======
+const u16 gMetatiles_Test[] = INCBIN_U16("data/tilesets/primary/test/metatiles.bin");
+const u16 gMetatileAttributes_Test[] = INCBIN_U16("data/tilesets/primary/test/metatile_attributes.bin");
+
+const u16 gMetatiles_TestSecondary[] = INCBIN_U16("data/tilesets/primary/test_secondary/metatiles.bin");
+const u16 gMetatileAttributes_TestSecondary[] = INCBIN_U16("data/tilesets/primary/test_secondary/metatile_attributes.bin");
+
+const u16 gMetatiles_TestSecond[] = INCBIN_U16("data/tilesets/secondary/test_second/metatiles.bin");
+const u16 gMetatileAttributes_TestSecond[] = INCBIN_U16("data/tilesets/secondary/test_second/metatile_attributes.bin");
+
+const u16 gMetatiles_Trainset[] = INCBIN_U16("data/tilesets/secondary/trainset/metatiles.bin");
+const u16 gMetatileAttributes_Trainset[] = INCBIN_U16("data/tilesets/secondary/trainset/metatile_attributes.bin");
+
+const u16 gMetatiles_Farm[] = INCBIN_U16("data/tilesets/secondary/farm/metatiles.bin");
+const u16 gMetatileAttributes_Farm[] = INCBIN_U16("data/tilesets/secondary/farm/metatile_attributes.bin");
+>>>>>>> Stashed changes

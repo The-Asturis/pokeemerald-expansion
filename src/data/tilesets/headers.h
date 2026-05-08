@@ -833,6 +833,7 @@ const struct Tileset gTileset_UnionRoom =
     .callback = NULL,
 };
 
+<<<<<<< Updated upstream
 #else
 
 // FRLG tilesets
@@ -1541,3 +1542,59 @@ const struct Tileset gTileset_HallOfFame =
 };
 
 #endif // IS_FRLG
+=======
+const struct Tileset gTileset_Test =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Test,
+    .palettes = gTilesetPalettes_Test,
+    .metatiles = gMetatiles_Test,
+    .metatileAttributes = gMetatileAttributes_Test,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_TestSecondary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_TestSecondary,
+    .palettes = gTilesetPalettes_TestSecondary,
+    .metatiles = gMetatiles_TestSecondary,
+    .metatileAttributes = gMetatileAttributes_TestSecondary,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_TestSecond =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_TestSecond,
+    .palettes = gTilesetPalettes_TestSecond,
+    .metatiles = gMetatiles_TestSecond,
+    .metatileAttributes = gMetatileAttributes_TestSecond,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Trainset =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Trainset,
+    .palettes = gTilesetPalettes_Trainset,
+    .metatiles = gMetatiles_Trainset,
+    .metatileAttributes = gMetatileAttributes_Trainset,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Farm =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Farm,
+    .palettes = gTilesetPalettes_Farm,
+    .metatiles = gMetatiles_Farm,
+    .metatileAttributes = gMetatileAttributes_Farm,
+    .callback = NULL,
+};
+>>>>>>> Stashed changes
